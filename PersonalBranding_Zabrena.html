@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zabrena Anezka Abdul | Personal Branding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;background:#0f172a;color:#e5e7eb;line-height:1.8}
+.container{max-width:850px;margin:auto;padding:80px 24px}
+.hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center}
+h1{font-size:4rem}
+.tag{color:#93c5fd;margin:12px 0 28px;font-weight:600}
+.quote{font-style:italic;color:#cbd5e1;max-width:650px}
+section{margin-top:90px}
+h2{font-size:1.8rem;margin-bottom:18px;border-left:4px solid #60a5fa;padding-left:12px}
+.card{background:#111827;padding:22px;border-radius:14px;border:1px solid #1f2937}
+ul{padding-left:20px}
+li{margin:10px 0}
+.footer{text-align:center;padding:60px 20px;color:#94a3b8;font-size:.9rem}
+.fade{opacity:0;transform:translateY(20px);transition:.7s}
+.fade.show{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="hero fade">
+<h1>Zabrena Anezka Abdul</h1>
+<p class="tag">Personal Branding</p>
+</div>
+
+<section class="fade">
+<h2>Tentang Saya</h2>
+<div class="card">
+<p>Halo! Saya Zabrena.</p>
+
+<p style="margin-top:16px">
+Saya siswa yang mengikuti ekstrakurikuler informatika karena merasa cukup tertarik untuk mengenal dunia teknologi lebih jauh. Juga,ingin mencoba hal baru yang salah satunya di bidang teknologi.
+Sejujurnya, saya masih belum benar-benar memahami materi seperti HTML, CSS, maupun pemrograman karena ini pertama kalinya. Banyak hal yang masih terasa baru buat saya.
+</p>
+
+<p style="margin-top:16px">
+Tapi, saya percaya bahwa setiap proses belajar pasti membutuhkan waktu. Saya suka untuk terus belajar, bertanya, dan memahami konsepnya sedikit demi sedikit. Bagi saya, kemajuan kecil tetap merupakan sebuah kemajuan.
+</p>
+</div>
+</section>
+
+<section class="fade">
+<h2>Hal yang Saya Pelajari Sejauh Ini</h2>
+<div class="card">
+<ul>
+<li>Mengenal HTML sebagai struktur dasar sebuah website.</li>
+<li>Memahami bahwa CSS digunakan untuk mengatur tampilan halaman web.</li>
+<li>Mulai mengenal pentingnya logika dalam pemrograman.</li>
+<li>Belajar bahwa teknologi tidak hanya tentang coding, tetapi juga tentang proses berpikir dan menyelesaikan masalah.</li>
+</ul>
+</div>
+</section>
+
+<section class="fade">
+<h2>Sedang Saya Pelajari</h2>
+<div class="card">
+<ul>
+<li>Dasar-dasar pengembangan website.</li>
+<li>Cara berpikir logis dalam menyelesaikan masalah.</li>
+<li>Membangun kebiasaan untuk terus belajar dan mencoba hal baru.</li>
+</ul>
+</div>
+</section>
+
+<section class="fade">
+<h2>Tujuan Saya</h2>
+<div class="card">
+<p>
+Saya ingin memahami dasar-dasar pengembangan website dengan lebih baik, mampu membuat proyek sederhana secara mandiri, juga terus mengembangkan kemampuan di bidang teknologi.
+</p>
+</div>
+</section>
+
+</div>
+
+<div class="footer">
+Made with curiosity, not perfection. © 2026 ZabrenaAnezkaAbdul
+</div>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show');});
+});
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
